@@ -1,9 +1,3 @@
-game.StarterGui:SetCore("SendNotification",{
-    Title = "Loading...",
-    Text = "Waiting Loading...",
-    Duration = 9,
-})
-wait(8)
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("Flee the Facility v2", "BloodTheme")
 
@@ -654,9 +648,3 @@ end)
 Player:NewSlider("JumpPower", "Default: 50", 500, 0, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
-wait(0.8)
-game.StarterGui:SetCore("SendNotification",{
-    Title = "Loaded",
-    Text = "Script hub by Ewerton99",
-    Duration = 5,
-})
